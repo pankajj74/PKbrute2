@@ -27,12 +27,15 @@ chmod +x pkbrute.py
 # Create alias for bash
 echo "alias pkbrute='python3 $(pwd)/pkbrute.py'" >> ~/.bashrc
 
-# Create alias for zsh if exists
-if [ -f ~/.zshrc ]; then
-    echo "alias pkbrute='python3 $(pwd)/pkbrute.py'" >> ~/.zshrc
-fi
+# Create alias for zsh (Kali uses zsh)
+echo "alias pkbrute='python3 $(pwd)/pkbrute.py'" >> ~/.zshrc
 
 echo ""
+echo "========================================="
 echo "Installation Complete!"
-echo "You can now run PKbrute using: python3 pkbrute.py"
-echo "Or reload your terminal and type: pkbrute"
+echo "========================================="
+echo "You can now run PKbrute using:"
+echo "  python3 pkbrute.py"
+echo "  OR"
+echo "  pkbrute (after restarting terminal)"
+echo "========================================="
